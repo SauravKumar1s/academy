@@ -45,6 +45,7 @@ const Login = () => {
                           type="password"
                           id="form2Example22"
                           className="form-control"
+                          placeholder="Enter Your Password"
                         />
                         <label className="form-label" for="form2Example22">
                           Password
