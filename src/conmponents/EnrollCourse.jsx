@@ -1,7 +1,16 @@
 import React from "react";
 import "../css/style.css";
+import { Routes, Route, useNavigate } from "react-router-dom";
+import Course from "./Course";
+
 
 const EnrollCourse = () => {
+
+  const navigate = useNavigate();
+  const navigateToCourse = () => {
+ 
+    navigate("/course");
+  };
   return (
     <>
       <form className="temp_form">
@@ -29,7 +38,7 @@ const EnrollCourse = () => {
             <div class="div1">
               <p>Number of Students: 222</p>
               <p>Course Description: yyyyy</p>
-              <button>Enroll Now</button>
+              <button  onClick={navigateToCourse} className="md:w-full bg-fuchsia-800 text-white font-bold py-2 px-4 border-b-4 hover:border-b-2 border-gray-500 hover:border-gray-100 rounded-full">Enroll Now</button>
             </div>
           </div>
           <div class="main_div main_div2">
@@ -41,9 +50,14 @@ const EnrollCourse = () => {
             <div class="div1">
               <p>Number of Students: 222</p>
               <p>Course Description: yyyyy</p>
-              <button>Enroll Now</button>
+              <button onClick={navigateToCourse} className="md:w-full bg-fuchsia-800 text-white font-bold py-2 px-4 border-b-4 hover:border-b-2 border-gray-500 hover:border-gray-100 rounded-full">Enroll Now</button>
             </div>
           </div>
+          <Routes>
+            <Route path="/course" element={<Course />} />
+            onClick={navigateToCourse}
+          </Routes>
+
         </div>
       </body>
     </>
