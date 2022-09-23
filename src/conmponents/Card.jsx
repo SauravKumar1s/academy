@@ -8,7 +8,13 @@ const Card = () => {
   const navigateToAcademy = () => {
     // 👇️ navigate to /contacts
     navigate("/academy");
+
   };
+
+  const navigateToEditCard = () => {
+    navigate("/editcard");
+  };
+
   return (
     <>
       <form className="temp_form">
@@ -38,7 +44,7 @@ const Card = () => {
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </p>{" "}
             <p>Student Name</p>
-            <button className=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full ">
+            <button onClick={navigateToEditCard} className=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full ">
               Edit
             </button>
             <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full ">
@@ -133,7 +139,10 @@ const Card = () => {
           <Routes>
             <Route path="/academy" element={<Academy />} />
             onClick={navigateToAcademy}
+            <Route path="/editcard" element={<Academy />} />
+            onClick={navigateToEditCard}
           </Routes>
+
         </div>
       </div>
       <div className="container fixed left-32">
