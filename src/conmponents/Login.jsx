@@ -38,9 +38,6 @@ const Login = () => {
                           className="form-control"
                           placeholder="Phone number or email address"
                         />
-                        <label className="form-label" for="form2Example11">
-                          Username
-                        </label>
                       </div>
 
                       <div className="form-outline mb-4">
