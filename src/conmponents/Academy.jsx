@@ -1,5 +1,5 @@
 import React from "react";
-
+ 
 const Academy = () => {
   return (
     <body className="bg-gray-100 flex bg-local">

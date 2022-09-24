@@ -20,6 +20,7 @@ import EditCard from './conmponents/EditCard';
 function App() {
   return (
     <>
+    
     <BrowserRouter>
         <Nav />
         <Routes>
@@ -36,7 +37,6 @@ function App() {
           <Route exact path="/editcard" element={<EditCard />} />
         </Routes>
        </BrowserRouter>
-
     
     </>
   );
