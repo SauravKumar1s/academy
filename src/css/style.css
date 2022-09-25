@@ -47,7 +47,7 @@
     display: flex;
     justify-content: space-between;
     padding: 12px 16px;
-    background-color: grey;
+    background-color: rgb(204, 197, 197);
 }
 .div {
     /* border: solid 1px green; */

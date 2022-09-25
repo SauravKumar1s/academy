@@ -51,8 +51,8 @@ const EnrollCourse = () => {
         </button>
       </form>
 
-      <body>
-        <div className="main_container ml-80 " style={{ width: "144%" }}>
+      <body >
+        <div className="main_container ml-80 " style={{width:"140%"  }}>
           <div className="users">
             {Courses.map((courseId) => (
               <>
