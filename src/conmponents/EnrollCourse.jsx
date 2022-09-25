@@ -52,7 +52,7 @@ const EnrollCourse = () => {
       </form>
 
       <body>
-        <div className="main_container ml-80" style={{ width: "144%" }}>
+        <div className="main_container ml-80 " style={{ width: "144%" }}>
           <div className="users">
             {Courses.map((courseId) => (
               <>
